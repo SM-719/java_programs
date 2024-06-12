@@ -1,0 +1,17 @@
+class xyz
+{
+	public static void main(String[]args)
+	{
+		System.out.println("Start");
+		hello(8);
+	}
+		
+	public static int hello(int i)
+	{
+		System.out.println(i+=1);
+		return i;
+	}
+	
+
+
+}

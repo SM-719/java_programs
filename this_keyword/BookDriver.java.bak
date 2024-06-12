@@ -1,0 +1,14 @@
+class BookDriver
+{
+	public static void main(String[]args)
+	{
+		Book b1 = new Book();
+
+		b1.name = "Hello";
+		b1.color="Black";
+		b1.price = 15000.00;
+
+		b1.displayBook();
+	}
+
+}

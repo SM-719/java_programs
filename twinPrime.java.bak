@@ -1,0 +1,45 @@
+import java.util.Scanner;
+class twinPrime
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("List of Twin Prime numbers between given range!");
+
+		System.out.println("Enter the First number");
+		int num1=sc.nextInt();
+
+		
+		if(prime(num1))
+		{
+			System.out.println("It is a prime number");
+		}
+		else
+		{
+			System.out.println("false");
+		}
+
+	}
+
+	public static boolean prime(int num1)
+	{
+		int i = num1;
+		while (i < num1)
+		{
+			if(num1 % i == 0)
+			{
+				break;
+			}
+			i++;
+		}
+		if (num1 == i)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
+}

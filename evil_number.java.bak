@@ -1,0 +1,25 @@
+import java.util.Scanner;
+class evilNumber
+{
+	public static void main(String[]args)
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the number to check wheather it is evil number or not");
+		int num = sc.nextInt();
+
+		decimalToBinary(num);
+	}
+	public static void decimalToBinary(int num)
+	{
+		int i = num;//15
+		int deno = 0;
+		String sum = " ";
+		while (i != 0)
+		{
+			deno = i % 2;//15%2=1 //7%2=1	
+			sum = deno + sum;//0=1+0
+			
+			i /=2;//15/2=7
+		}
+	}
+}

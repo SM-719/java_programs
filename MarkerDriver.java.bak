@@ -1,0 +1,14 @@
+class MarkerDriver 
+{
+	public static void main(String[] args) 
+	{
+		Marker m1 = new Marker();
+
+		m1.name = name;
+		m1.color = "Red";
+		m1.price = 150.10;
+		m1.point = 2;
+
+		m1.displayMarker();
+	}
+}

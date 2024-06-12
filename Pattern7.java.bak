@@ -1,0 +1,26 @@
+//a
+//bc
+//def
+//import java.util.Scanner;
+class Pattern7
+{
+	public static void main(String[] args) 
+	{
+		
+		
+		System.out.println("--------------------------------------------------");
+		
+
+		for (char ch = 'a';	ch <= 'e' ;ch++ )
+		{
+			for (char ab = 'a'; ab <= ch ; ab++ )
+			{
+				System.out.print(ch+" ");
+			}
+			System.out.println();
+		}
+	
+	
+
+	}
+}

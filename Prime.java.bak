@@ -1,0 +1,39 @@
+ import java.util.Scanner;
+ class prime
+ {
+	 public static void main(String[]args)
+	 {
+		Scanner sc = new Scanner(String[]args);
+		System.out.println("Enter the number");
+		int num = sc.nextInt();
+		
+		if (isPrime(num))
+		{
+			System.out.println("The number is Prime");
+		}
+		else
+		 {
+			System.out.println("The number is not Prime");
+		 }
+	 public static boolean isPrime(int num)
+	 {
+		int deno = 2;
+		while (deno < num)
+		{
+			if (num % deno == 0 )
+			{
+				break;
+			}
+			deno++;
+		}
+
+		if (num == deno)
+		{
+			return true;
+		}
+		else
+		 {
+			return false;
+		 } 
+	 }
+ }

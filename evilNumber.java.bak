@@ -1,0 +1,41 @@
+import java.util.Scanner;
+class evilNumber
+{
+	public static void main(String[]args)
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the number to check wheather it is evil number or not");
+		int num = sc.nextInt();
+		
+
+		if (decimalToBinary(num) % 2 == 0)
+		{
+			System.out.println("Evil");
+		}
+		else
+		{
+			System.out.println("Not evil");
+		}
+		
+
+	}
+	public static int decimalToBinary(int num)
+	{
+		int i = num;
+		int count = 0;
+		int deno = 0;
+		String sum = " ";
+		while (i != 0)
+		{
+			deno = i % 2;
+			if(deno == 1)
+			{
+				count++;
+			}
+			sum = deno + sum;
+			
+			i /=2;     
+		}
+		return count;
+	}
+}
